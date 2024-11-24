@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<string.h>
 int myAtoi(char* s) {
-    if((*s<'0'||*s>'9')&&*s!=' '&&*s!='+'&&*s!='-')
-        return 0;
     long long result = 0;
     int len = strlen(s);
     while(*s==' ')s++;
+    if((*s<'0'||*s>'9')&&*s!=' '&&*s!='+'&&*s!='-')
+        return 0;
     if(*s == '\0')return 0;
     int flag = (*s == '-'?-1:1);
     if(*s<'0'||*s>'9')s++;
@@ -21,8 +21,6 @@ int myAtoi(char* s) {
             return -2147483648;
         s++;
     }
-
-    
     return result*flag;
 }
 int main()
