@@ -17,15 +17,14 @@ long long reverse(int x) {
         turned += (long long)x% 10;
         x/=10;
     }
-    if((turned)<2e31-1)
+    if((turned)>2e31-1)
         return 0;
-
     return turned*flag;
 }
 int main()
 {
     printf("%lld",reverse(1534236469));
-    printf("%lld",2e31);
+
 
 
 
