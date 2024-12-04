@@ -4,13 +4,17 @@
 class Solution {
 public:
     int minimumBoxes(vector<int>& apple, vector<int>& capacity) {
-        int ans(0);
-        int apples=reduce(apple.begin(),apple.end(),0);
+        int minCountChest = 0,sum = 0;
+        for(int i = 0;i<apple.size();i++)
+            sum += apple[i];
         sort(capacity.begin(),capacity.end());
-        for(int i=capacity.size()-1;i>=0;i--){
-            ans++;
-            if((apples-=capacity[i])<=0)break;
+        for(int i = capacity.size()-1;i>=0;i--)
+        {
+            sum-= capacity[i];
+            minCountChest ++;
+
+            if(sum<=0)break;
         }
-        return ans;
+        return minCountChest;
     }
 };
