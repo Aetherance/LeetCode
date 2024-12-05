@@ -1,10 +1,7 @@
 // 1005. K 次取反后最大化的数组和
 // 虽然长 但是不慢
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
-using namespace std;
+#include"using.h"
 
 class Solution {
 public:

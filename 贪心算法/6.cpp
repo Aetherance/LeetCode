@@ -1,9 +1,6 @@
 // 1403. 非递增顺序的最小子序列
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
-using namespace std;
+#include<using.h>
 
 class Solution {
 public:

@@ -1,9 +1,6 @@
 // 1833. 雪糕的最大数量
 
-#include<iostream>
-#include<algorithm>
-#include<vector>
-using namespace std;
+#include<using.h>
 
 class Solution {
 public:
