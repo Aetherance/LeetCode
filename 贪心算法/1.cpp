@@ -1,6 +1,11 @@
 // 最简单的贪心
 // 3074. 重新分装苹果
 
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
 class Solution {
 public:
     int minimumBoxes(vector<int>& apple, vector<int>& capacity) {

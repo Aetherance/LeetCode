@@ -1,5 +1,10 @@
 // 2279. 装满石头的背包的最大数量
 
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
 class Solution {
 public:
     int maximumBags(vector<int>& capacity, vector<int>& rocks, int additionalRocks) {

@@ -1,5 +1,10 @@
 // 1833. 雪糕的最大数量
 
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
 class Solution {
 public:
     int maxIceCream(vector<int>& costs, int coins) {
